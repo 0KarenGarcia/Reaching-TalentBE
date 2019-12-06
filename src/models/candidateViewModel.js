@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const firstSchema= new Schema({
+const candidateSchema= new Schema({
     contact: String,
     result: Number,
     timeInit: Date,
@@ -8,5 +8,5 @@ const firstSchema= new Schema({
    
 })
 
-const first= model ("msj ", firstSchema);
-module.exports= first;
+const Candidate= model ("candidateView", candidateSchema, "candidateView" );
+module.exports=Candidate;
