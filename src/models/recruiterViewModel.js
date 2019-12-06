@@ -1,13 +1,13 @@
 const { Schema, model } = require('mongoose');
 
-const firstSchema= new Schema({
-   /*  question: String,
+const recruiterSchema= new Schema({
+   question: String,
     answerOne: String,
     answerOne: String,
     succes: Number,
-    timeFinish: Date */
-    msj: String
+    timeFinish: Date 
+    
 })
 
-const First= model("first", firstSchema, "first");
-module.exports= First;
+const Recruiter= model("recruiterView", recruiterSchema, "recruiterView");
+module.exports= Recruiter;

@@ -1,11 +1,9 @@
 var express = require('express');
 var router= express();
-const First = require (`../models/recruiterViewModel`)
+const Recruiter= require (`../models/recruiterViewModel`)
 
 router.get('/recruiter',(req,res)=>{
-    console.log(First);
-    
-    First.find({msj:"hola mundo "}, (err, doc) => {
+    Recruiter.find({}, (err, doc) => {
         res.json(JSON.stringify(doc))
        console.log(doc);
        return;  
