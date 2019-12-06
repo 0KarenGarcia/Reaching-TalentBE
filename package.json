@@ -4,7 +4,8 @@
   "description": "Reaching Talent BE es la parte Back End del proyecto  Reaching Talent donde trabajaremos con tecnologias como\r ° Express para crear en servidor \r ° MongoDB funcionara como base de datos\r ° Heroku para hacer el deploy",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
