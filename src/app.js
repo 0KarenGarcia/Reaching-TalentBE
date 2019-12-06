@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const recruiterView =require(`./controller/recruiterView`)
 const candidateView =require(`./controller/candidateView`)
-const test = require(`./controller/test`)
 const cors = require('cors');
 
 
