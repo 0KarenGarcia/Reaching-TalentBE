@@ -12,12 +12,6 @@ router.get('/recruiter',(req,res)=>{
 
 router.post('/recruiter', (req, res) => {
     const { contact, result, timeInit, approved} = req.body;
-    console.log( contact);
-    console.log( result);
-    console.log( approved);
-    console.log(typeof contact);
-    console.log(typeof result);
-    console.log(typeof approved);
     if(typeof contact != "string" || typeof result != "number"||  typeof approved != "boolean") return res.status(400).json({success: false, error: 'Bad Request'});
     Recruiter.create({contact, result, approved },(err, doc) => {
       if (err) return console.log(err);
