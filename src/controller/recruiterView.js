@@ -3,7 +3,7 @@ var router= express();
 
 //const firstS = require (`../models/recluiterView`)
 
-router.get('/me',function(req,res){
+router.get('/me',(req,res)=>{
     res.send("hello word")
        console.log("msj");
        
