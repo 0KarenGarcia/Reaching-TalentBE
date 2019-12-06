@@ -1,12 +1,13 @@
 const { Schema, model } = require('mongoose');
 
 const firstSchema= new Schema({
-    question: String,
+   /*  question: String,
     answerOne: String,
     answerOne: String,
     succes: Number,
-    timeFinish: Date
+    timeFinish: Date */
+    msj: String
 })
 
-const first= model ("msj ", firstSchema);
-module.exports= first;
+const First= model("first", firstSchema, "first");
+module.exports= First;

@@ -1,12 +1,15 @@
 var express = require('express');
 var router= express();
+const First = require (`../models/recruiterViewModel`)
 
-//const firstS = require (`../models/recruiterView`)
-
-router.get('/me',(req,res)=>{
-    res.send("hello word")
-       console.log("msj");
-       
+router.get('/recruiter',(req,res)=>{
+    console.log(First);
+    
+    First.find({msj:"hola mundo "}, (err, doc) => {
+        res.json(JSON.stringify(doc))
+       console.log(doc);
+       return;  
+});
 })
  
 
